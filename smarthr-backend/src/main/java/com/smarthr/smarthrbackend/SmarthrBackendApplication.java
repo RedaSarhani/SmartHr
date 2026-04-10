@@ -1,4 +1,4 @@
-package com.smathr.smarthr_backend;
+package com.smarthr.smarthrbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
