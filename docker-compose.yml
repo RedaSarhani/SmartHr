@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: smarthr-db
+    environment:
+      POSTGRES_DB: smarthr
+      POSTGRES_USER: smarthr_user
+      POSTGRES_PASSWORD: smarthr_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: smarthr-redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
