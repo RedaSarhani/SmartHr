@@ -2,16 +2,28 @@
 target/
 *.class
 *.jar
-.mvn/
+
 # IntelliJ
 .idea/
 *.iml
+
 # React / Node
 node_modules/
 dist/
+
+# Environment variables (CRITICAL)
 .env
 .env.*
 !.env.example
+
+# Logs
+logs/
+*.log
+
+# Sensitive configs
+application-*.properties
+application-*.yml
+
 # OS files
 .DS_Store
 Thumbs.db
