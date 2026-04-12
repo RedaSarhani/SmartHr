@@ -1,13 +1,13 @@
-version: '3.8'
 
+version: '3.8'
 services:
   postgres:
     image: postgres:15
     container_name: smarthr-db
     environment:
-      POSTGRES_DB: smarthr
-      POSTGRES_USER: smarthr_user
-      POSTGRES_PASSWORD: smarthr_pass
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
@@ -21,3 +21,4 @@ services:
 
 volumes:
   postgres_data:
+

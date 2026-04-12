@@ -2,6 +2,7 @@
 target/
 *.class
 *.jar
+.mvn/
 
 # IntelliJ
 .idea/
@@ -11,19 +12,17 @@ target/
 node_modules/
 dist/
 
-# Environment variables (CRITICAL)
+# Environment files — never commit real ones
 .env
-.env.*
-!.env.example
+.env.local
 
-# Logs
-logs/
-*.log
-
-# Sensitive configs
-application-*.properties
-application-*.yml
+# Local Spring Boot config — contains real credentials
+application-local.properties
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+logs/
