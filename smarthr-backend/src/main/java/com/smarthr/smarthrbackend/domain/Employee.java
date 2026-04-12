@@ -43,7 +43,7 @@ public class Employee extends BaseEntity{
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
-    private EmployeeStatus employeeStatus = EmployeeStatus.ACTIVE;
+    private EmployeeStatus status = EmployeeStatus.ACTIVE;
 
     @Column(length = 500)
     private String photo_url;
