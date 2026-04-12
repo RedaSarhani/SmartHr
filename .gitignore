@@ -12,11 +12,11 @@ target/
 node_modules/
 dist/
 
-# Environment files — never commit real ones
+# Environment files
 .env
 .env.local
 
-# Local Spring Boot config — contains real credentials
+# Local Spring Boot config
 application-local.properties
 
 # OS files
